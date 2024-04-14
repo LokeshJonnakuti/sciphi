@@ -1,0 +1,310 @@
+repo_name: LokeshJonnakuti/sciphi
+report_id: 9e20e85a597f8c366b1591ef3d6f8495
+version: 0.1
+repo_type: Public
+timestamp: '2024-04-14T10:52:24+00:00'
+requested_by: emrgnt-cmplxty
+provider: github
+branch: main
+detected_tools_count: 22
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/.github/workflows/on-pr-static-checks.yml
+  detection_source: ".github/workflows/on-pr-static-checks.yml"
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-09-20 15:23:29.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: Claude
+  description: A next-generation AI assistant for your tasks, no matter the scale
+  website_url: https://www.anthropic.com/product
+  version: 0.3.10
+  open_source: false
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Models
+  image_url: https://img.stackshare.io/service/101883/default_fddf1fbe1d52baf4dac573b2b7fc24b78cc729b1.jpg
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: OpenAI
+  description: Creating safe AGI that benefits all
+  website_url: https://openai.com/
+  version: 0.27.8
+  open_source: false
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Models
+  image_url: https://img.stackshare.io/service/48786/default_8b1119bcbb159cebebc2f6cfc9cd2e359b169d22.jpg
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: Sphinx
+  description: Open source full text search server, designed from the ground up with
+    performance, relevance (aka search quality), and integration simplicity in mind
+  website_url: http://sphinxsearch.com/
+  open_source: false
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Search Engines
+  image_url: https://img.stackshare.io/service/1598/TtqoAo1V.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/docs/requirements-docs.txt
+  detection_source: docs/requirements-docs.txt
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-31 01:50:38.000000000 Z
+- name: black
+  description: The uncompromising code formatter
+  package_url: https://pypi.org/project/black
+  version: 23.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+  vulnerabilities:
+  - name: Black vulnerable to Regular Expression Denial of Service (ReDoS)
+    cve_id: CVE-2024-21503
+    cve_url: https://github.com/advisories/GHSA-fj7x-q9j7-g6q6
+    detected_date: Mar 21
+    severity: moderate
+    first_patched: 24.3.0
+- name: anthropic
+  description: The official Python library for the anthropic API
+  package_url: https://pypi.org/project/anthropic
+  version: 0.3.10
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 15:38:33.000000000 Z
+- name: bs4
+  description: Dummy package for Beautiful Soup
+  package_url: https://pypi.org/project/bs4
+  version: 0.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19906/default_2aeed05332f0410b54817405c7e8e202a7e763cf.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: fire
+  description: A library for automatically generating command line interfaces
+  package_url: https://pypi.org/project/fire
+  version: 0.5.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20129/default_3146a05cf4dd77d8b50cff25709373c081ac5053.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-25 00:43:45.000000000 Z
+- name: flake8
+  description: 'The modular source code checker: pep8, pyflakes and co'
+  package_url: https://pypi.org/project/flake8
+  version: 6.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19920/default_c8be5290cb8d8a8b578535a2c6475d1057ff4ea4.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: isort
+  description: A Python utility / library to sort Python imports
+  package_url: https://pypi.org/project/isort
+  version: 5.12.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20117/default_9cf91bfbbfb266fc12a914cdc09d9e4b55c773bb.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: mypy
+  description: Optional static typing for Python
+  package_url: https://pypi.org/project/mypy
+  version: 1.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20219/default_d4dd0466552a9776ca8535b869e22a3362790c94.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-09-20 15:23:29.000000000 Z
+- name: openai
+  description: The official Python library for the openai API
+  package_url: https://pypi.org/project/openai
+  version: 0.27.8
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 15:38:33.000000000 Z
+- name: pandas
+  description: Powerful data structures for data analysis
+  package_url: https://pypi.org/project/pandas
+  version: 2.1.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19837/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: pre-commit
+  description: A framework for managing and maintaining multi-language pre-commit
+    hooks
+  package_url: https://pypi.org/project/pre-commit
+  version: 3.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20560/default_d975dcf643a054134f39226d51d4a5fea9320efe.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
+- name: python-dotenv
+  description: Add .env support to your django/flask apps in development and deployments
+  package_url: https://pypi.org/project/python-dotenv
+  version: 1.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20095/default_3141eabecdd8efa55de73a33c43f2ac0d5bbf954.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 20:14:36.000000000 Z
+- name: retrying
+  description: Retrying
+  package_url: https://pypi.org/project/retrying
+  version: 1.3.4
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20013/default_70556f9333e0a39c148cac0c36ca24235943f270.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 15:38:33.000000000 Z
+- name: torch
+  description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+  package_url: https://pypi.org/project/torch
+  version: 2.1.0
+  license: BSD-1-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20038/default_a7a70921d2d3189665c78015850dc968f41705a1.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 15:38:33.000000000 Z
+- name: tqdm
+  description: Fast, Extensible Progress Meter
+  package_url: https://pypi.org/project/tqdm
+  version: 4.66.1
+  license: MPL-2.0,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19846/default_accee5d2b8ed75c2245f13504daf75b1cbc8cc9f.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: emrgnt-cmplxty
+  last_updated_on: 2023-10-23 15:38:33.000000000 Z
+- name: yapf
+  description: A formatter for Python code
+  package_url: https://pypi.org/project/yapf
+  version: 0.40.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20399/default_27c957eac1674813a0a457a78f430be9e3c184a7.png
+  detection_source_url: https://github.com/LokeshJonnakuti/sciphi/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Owen
+  last_updated_on: 2023-09-15 21:03:27.000000000 Z
