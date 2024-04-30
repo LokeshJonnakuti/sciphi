@@ -2,7 +2,6 @@
 import argparse
 import hashlib
 import os
-import random
 import secrets
 import time
 
@@ -143,7 +142,7 @@ if __name__ == "__main__":
 
     seed = int(time.time() * 1_000_000) + os.getpid()
     logger.info(f"Using seed: {seed}")
-    random.seed(seed)
+    secrets.SystemRandom().seed(seed)
 
     for batch in data_maker.generator(args.batch_size, args.num_samples):
         completions = llm_provider.get_batch_completion(batch)
