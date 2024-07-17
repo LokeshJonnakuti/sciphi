@@ -121,7 +121,7 @@ class Scraper:
     def get_soup(page_url: str) -> Optional[BeautifulSoup]:
         """Retrieve and parse a webpage."""
         try:
-            response = requests.get(page_url, headers=HEADERS)
+            response = requests.get(page_url, headers=HEADERS, timeout=60)
             response.raise_for_status()
             return BeautifulSoup(response.text, "html.parser")
         except requests.RequestException as e:

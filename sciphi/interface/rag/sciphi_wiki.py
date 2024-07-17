@@ -81,7 +81,7 @@ def wiki_search_api(
             f"{rag_api_base}/search",
             json={"queries": batch_queries, "top_k": top_k},
             headers={"Authorization": f"Bearer {rag_api_key}"},
-        )
+        timeout=60)
         if response.status_code != 200:
             if "detail" in response.json():
                 raise ValueError(
