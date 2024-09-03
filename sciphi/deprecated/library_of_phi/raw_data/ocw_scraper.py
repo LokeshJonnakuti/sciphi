@@ -42,6 +42,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from sciphi.writers import JsonlDataWriter
+from security import safe_requests
 
 # Constants
 BASE_URL = "https://ocw.mit.edu"
@@ -101,7 +102,7 @@ class Scraper:
     def get_soup(page_url: str) -> Optional[BeautifulSoup]:
         """Retrieve and parse a webpage."""
         try:
-            response = requests.get(page_url, headers=HEADERS)
+            response = safe_requests.get(page_url, headers=HEADERS)
             response.raise_for_status()
             return BeautifulSoup(response.text, "html.parser")
         except requests.RequestException as e:
